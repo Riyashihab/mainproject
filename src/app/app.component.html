@@ -1,0 +1,117 @@
+<div class="card-header">
+  <h3>Faculty Registration</h3>
+</div>
+
+
+  <div class="card-body">
+    <form class="form" [formGroup]="registerForm">
+    <div class="form-group col-md-1">
+      <label for="inputEmail4">Faculty ID</label>
+      <input type="Facultyid" class="form-control" id="inputEmail4" FormControlName="Facultyid">
+    </div>
+    <br>
+    
+    <div class="form-group col-md-4">
+      <label for="firstname">First Name</label>
+      <input type="firstname" class="form-control" id="firstname" FormControlName="firstname">
+      
+    
+  </div>
+  <br>
+  
+  <div class="form-group col-md-4">
+    <label for="lastname">Last Name</label>
+    <input type="lastname" class="form-control" id="lastname"  FormControlName="lastname">
+  </div>
+
+  <br>
+  <div class="form-group col-md-4">
+    <label for="phonenumber">Phone Number</label>
+    <input type="phonenumber" class="form-control" id="phonenumber"  FormControlName="phonenumber">
+  </div>
+ 
+    
+
+  <br>
+  
+    <div class="form-group col-md-4">
+      <label for="skills">Skills</label>
+      <select id="skills" class="form-control">
+        <option selected>Choose...</option>
+        
+        <option value="Angular">Angular</option>
+  <option value="Nodejs">Node</option>
+  <option value="Html&CSS">Html&CSS></option>
+  
+  <option value="php" >php</option>
+  <option value=".NET" >.NET</option>
+  <option value="JAVA" >JAVA</option>
+  <option value="SQL" >SQL</option>
+  <option value="VLSI" >VLSI</option>
+  <option value="Testing" >Testing</option>
+      </select>
+    </div>
+    <br>
+    <div class="form-group col-md-4">
+      <label for="Coursehandling">Course Handling</label>
+      <select id="Coursehandling" class="form-control">
+        <option selected>Choose...</option>
+        
+        <option value="AdvancedProgramming">Advanced Programming</option>
+  <option value="Advanced C++ Programming">Advanced C++ Programming</option>
+  <option value="ASP.NET Programming">ASP.NET Programming></option>
+  
+  <option value="Cloud infrastructure & servces" >Cloud infrastructure & servces</option>
+  <option value="Backup Recovery Systems and Architecture" >Backup Recovery Systems and Architecture</option>
+  <option value="Building Information Modeling using Autodesk Revit" >Building Information Modeling using Autodesk Revit</option>
+  
+  <option value="C# & ADO.Net Programming" >C# & ADO.Net Programming</option>
+  
+  <option value="DATA SCIENCE AND BIG DATA ANALYTICS" >DATA SCIENCE AND BIG DATA ANALYTICS</option>
+  
+  <option value="Digital Literacy (IT for Non-IT Professionals)" >Digital Literacy (IT for Non-IT Professionals)</option>
+  <option value="Digital Prototyping using Autodesk Inventor" >Digital Prototyping using Autodesk Inventor</option>
+  <option value="Digital Signal Processing" >Digital Signal Processing</option>
+  <option value="Embedded System Design using LabView" >Embedded System Design using LabView</option>
+  <option value="Foundation Skills in IT" >Foundation Skills in IT</option>
+  <option value="Information Storage and Management" >Information Storage and Management</option>
+  <option value="J2EE Programming" >J2EE Programming</option>
+  <option value="PHP with MySQL" >PHP with MySQL</option>
+  <option value="Multicore Programming" >Multicore Programming</option>
+ 
+  <option value="Software Testing" >Software Testing</option>
+  <option value="SQL and PL/SQL Programming" >SQL and PL/SQL Programming</option>
+  <option value="VLSI" >VLSI</option>
+  <option value="Web Designing and Scripting" >Web Designing and Scripting</option>
+  
+
+      </select>
+    </div>
+
+    <br>
+    
+      <div class="form-group col-md-4">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" FormControlName="email">
+      
+    </div>
+      <br>
+    
+        <div class="form-group col-md-4">
+          <label for="password">Password</label>
+          <input type="text" class="form-control" id="password" FormControlName="password">
+        
+      </div>
+        <br>
+        
+          <div class="form-group col-md-4">
+            <label for="reenterpassword">Re Enter Password</label>
+            <input type="text" class="form-control" id="reenterpassword" FormControlName="reenterpassword">
+          
+        </div>
+          <br>
+  <br>
+  <button type="submit" [disabled]="registerForm.invalid">Create Account</button>
+
+</form>
+</div>
